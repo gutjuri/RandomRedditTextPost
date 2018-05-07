@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<VBox xmlns="http://javafx.com/javafx/8.0.162-ea"
+      xmlns:fx="http://javafx.com/fxml/1">
+
+    <BorderPane >
+    <top>
+        <Label text="Reddit random post getter V1"/>
+    </top>
+    <center>
+        <TextArea wrapText="true" fx:id="tarea" prefHeight="600" prefWidth="800"/>
+    </center>
+    <bottom>
+        <HBox >
+            <Label text="Subreddit: "/>
+            <TextField text="kopiernudeln" fx:id="tfield"/>
+            <Button text="Get random post" onAction="#onGet"/>
+            <Button text="Copy to clipboard" onAction="#onCopy"/>
+            <Button text="Exit" onAction="#onExit"/>
+        </HBox>
+    </bottom>
+    </BorderPane>
+
+</VBox>

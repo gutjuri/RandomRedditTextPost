@@ -43,9 +43,11 @@ public class RandomPost extends Application {
                         .get("data").getAsJsonObject().get("children").getAsJsonArray().get(0)
                         .getAsJsonObject().get("data").getAsJsonObject().get("selftext");
         String text = toplevel.getAsString();
-        return removeSource(text);
+        return text;
     }
 
+    // TODO buggy
+    @SuppressWarnings("unused")
     private static String removeSource(String str) {
         return str.substring(0, str.lastIndexOf("\n\n"));
     }

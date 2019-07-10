@@ -15,7 +15,7 @@
         <Label text="Reddit random post getter V1"/>
     </top>
     <center>
-        <TextArea wrapText="true" fx:id="tarea" prefHeight="600" prefWidth="800"/>
+        <TextArea wrapText="true" fx:id="tarea" editable="false" prefHeight="600" prefWidth="800"/>
     </center>
     <bottom>
         <HBox >
